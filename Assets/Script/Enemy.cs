@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -55,9 +56,12 @@ public class Enemy : MonoBehaviour
             Dead();
         }
     }
-
     void Dead()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnEnable() {
+        target = GameManager.instance.player.GetComponent<Rigidbody2D>();
     }
 }

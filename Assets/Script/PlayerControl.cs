@@ -5,6 +5,7 @@ public class PlayerControl : MonoBehaviour
 {
     public Vector2 inputVec;
     public float speed;
+    public Scaner scaner;
     Rigidbody2D rigid;
     SpriteRenderer sprite;
     Animator animator;
@@ -16,6 +17,7 @@ public class PlayerControl : MonoBehaviour
         animator = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        scaner = gameObject.GetComponent<Scaner>();
     }
 
     void OnMove(InputValue value)

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7218887855355516511}
   - component: {fileID: 8479832208826473836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,9 +100,10 @@ GameObject:
   - component: {fileID: 5979027011599269808}
   - component: {fileID: 4343850807005956044}
   - component: {fileID: 5236634060850728756}
-  m_Layer: 0
-  m_Name: Enemy (1)
-  m_TagString: Untagged
+  - component: {fileID: -2114919292730777808}
+  m_Layer: 6
+  m_Name: Enemy B
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +117,9 @@ Transform:
   m_GameObject: {fileID: 7902485829243949356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.089, y: 1.0034872, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7218887855355516511}
   m_Father: {fileID: 0}
@@ -264,3 +265,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.7, y: 0.9}
   m_Direction: 0
+--- !u!114 &-2114919292730777808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902485829243949356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25199a4f5997456499305e4f8e1eea08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhp: 7
+  hp: 7
+  speed: 3
+  target: {fileID: 0}
